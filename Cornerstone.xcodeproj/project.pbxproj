@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90ED24276A5B00FB0AB1 /* TestView.swift */; };
+		020A90F024276AB900FB0AB1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90EF24276AB900FB0AB1 /* UserView.swift */; };
+		020A90F22427704E00FB0AB1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90F12427704E00FB0AB1 /* Networking.swift */; };
 		0256873D24223E210078AFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873C24223E210078AFDD /* AppDelegate.swift */; };
 		0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873E24223E210078AFDD /* SceneDelegate.swift */; };
-		0256874124223E210078AFDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256874024223E210078AFDD /* ContentView.swift */; };
+		0256874124223E210078AFDD /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256874024223E210078AFDD /* IndexView.swift */; };
 		0256874324223E230078AFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256874224223E230078AFDD /* Assets.xcassets */; };
 		0256874624223E230078AFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256874524223E230078AFDD /* Preview Assets.xcassets */; };
 		0256874924223E230078AFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256874724223E230078AFDD /* LaunchScreen.storyboard */; };
 		0256875424223E230078AFDD /* CornerstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256875324223E230078AFDD /* CornerstoneTests.swift */; };
+		02E6D9B1242DDACE005DDAD4 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6D9B0242DDACE005DDAD4 /* Bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020A90ED24276A5B00FB0AB1 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		020A90EF24276AB900FB0AB1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		020A90F12427704E00FB0AB1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0256873924223E210078AFDD /* Cornerstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cornerstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256873C24223E210078AFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0256873E24223E210078AFDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0256874024223E210078AFDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0256874024223E210078AFDD /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		0256874224223E230078AFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0256874524223E230078AFDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0256874824223E230078AFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +45,8 @@
 		0256874F24223E230078AFDD /* CornerstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256875324223E230078AFDD /* CornerstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerstoneTests.swift; sourceTree = "<group>"; };
 		0256875524223E230078AFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0256875E24223E700078AFDD /* Cornerstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cornerstone.entitlements; sourceTree = "<group>"; };
+		02E6D9B0242DDACE005DDAD4 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +88,14 @@
 		0256873B24223E210078AFDD /* Cornerstone */ = {
 			isa = PBXGroup;
 			children = (
+				0256875E24223E700078AFDD /* Cornerstone.entitlements */,
 				0256873C24223E210078AFDD /* AppDelegate.swift */,
+				02E6D9B0242DDACE005DDAD4 /* Bridge.swift */,
 				0256873E24223E210078AFDD /* SceneDelegate.swift */,
-				0256874024223E210078AFDD /* ContentView.swift */,
+				0256874024223E210078AFDD /* IndexView.swift */,
+				020A90F12427704E00FB0AB1 /* Networking.swift */,
+				020A90ED24276A5B00FB0AB1 /* TestView.swift */,
+				020A90EF24276AB900FB0AB1 /* UserView.swift */,
 				0256874224223E230078AFDD /* Assets.xcassets */,
 				0256874724223E230078AFDD /* LaunchScreen.storyboard */,
 				0256874A24223E230078AFDD /* Info.plist */,
@@ -208,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */,
 				0256873D24223E210078AFDD /* AppDelegate.swift in Sources */,
+				02E6D9B1242DDACE005DDAD4 /* Bridge.swift in Sources */,
+				020A90F024276AB900FB0AB1 /* UserView.swift in Sources */,
+				020A90F22427704E00FB0AB1 /* Networking.swift in Sources */,
 				0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */,
-				0256874124223E210078AFDD /* ContentView.swift in Sources */,
+				0256874124223E210078AFDD /* IndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +380,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cornerstone/Cornerstone.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone/Preview Content\"";
 				DEVELOPMENT_TEAM = F5XA2GJLTZ;
@@ -373,6 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.id.raboczi.Cornerstone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cornerstone/Cornerstone.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone/Preview Content\"";
 				DEVELOPMENT_TEAM = F5XA2GJLTZ;
@@ -393,6 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.id.raboczi.Cornerstone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
