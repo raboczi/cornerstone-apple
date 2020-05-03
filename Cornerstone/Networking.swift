@@ -53,8 +53,27 @@ func setTestValue(to newValue: String) {
                 throw error
             }
             
-            guard let response = response as? HTTPURLResponse, response.statusCode == 204 else {
+            guard let response = response as? HTTPURLResponse else {
                 throw NSError(domain: "Application error domain", code: 5, userInfo: [NSLocalizedDescriptionKey: "Bad response"])
+            }
+            
+            switch response.statusCode {
+            case 204:  // No content
+                // Success!
+                break
+                
+            case 401:  // Unauthorized
+                let scheme = response.allHeaderFields["Www-Authenticate"] as? String
+                switch scheme {
+                case "Basic":
+                    print("Retry using Basic authentication")
+                    
+                default:
+                    print("Server at \(ServerURL) requires \(scheme ?? "unspecified") authentication method, which this app does not support")
+                }
+                
+            default:
+                throw NSError(domain: "Application error domain", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey: HTTPURLResponse.localizedString(forStatusCode: response.statusCode)])
             }
         } catch {
             DispatchQueue.main.async {
