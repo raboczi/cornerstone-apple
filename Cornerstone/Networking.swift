@@ -42,12 +42,10 @@ func beep() -> String {
 
 func setTestValue(to newValue: String) {
     var request = URLRequest(url: ServerURL)
-    guard let authentication = "karaf:karaf"
-        .data(using: .utf8)?
-        .base64EncodedString() else { fatalError() }
     request.httpMethod = "POST"
-    request.setValue("Basic \(authentication)", forHTTPHeaderField: "Authorization")
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.setBasicAuthorization(username: "karaf", password: "karaf")
+    
     let task = URLSession.shared.uploadTask(with: request, from: newValue.data(using: .utf8)) {
         data, response, error in
         do {
@@ -66,4 +64,13 @@ func setTestValue(to newValue: String) {
         }
     }
     task.resume()
+}
+
+extension URLRequest {
+    mutating func setBasicAuthorization(username: String, password: String) {
+        guard let authorization = "\(username):\(password)"
+            .data(using: .utf8)?
+            .base64EncodedString() else { fatalError() }
+        setValue("Basic \(authorization)", forHTTPHeaderField: "Authorization")
+    }
 }
