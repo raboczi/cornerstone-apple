@@ -12,14 +12,15 @@ import SwiftUI
 struct TestView: View {
     
     @Binding var value: String
-
-     var body: some View {
+    let networking = Networking()
+    
+    var body: some View {
         VStack {
             Text(value).padding()
             HStack {
-                Button("Three") { setTestValue(to: "Three") }
+                Button("Three") { self.networking.setTestValue(to: "Three") }
                     .padding()
-                Button("Four") { setTestValue(to: "Four") }
+                Button("Four") { self.networking.setTestValue(to: "Four") }
                     .padding()
             }
         }

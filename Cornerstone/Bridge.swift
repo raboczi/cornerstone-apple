@@ -10,18 +10,24 @@ import Foundation
 
 // MARK: - OSGi events over WebSockets
 
-//let ServerWebSocketURL = URL(string: "wss://raboczi.id.au/example-websocket")!
-let ServerWebSocketURL = URL(string: "ws://radiostar.local:8181/example-websocket")!
 let TestServiceNotificationName = NSNotification.Name(rawValue: "au/id/raboczi/cornerstone/test_service/EVENT")
+
+let OSGiEventPublisher =
+NotificationCenter.default.publisher(for: TestServiceNotificationName)
+    .map { $0.object as? String ?? "Error" }
+    .receive(on: RunLoop.main)
 
 /// Bridge between NotificationCenter events and OSGi events over WebSocket
 class Bridge {
-    
+
+    //let ServerWebSocketURL = URL(string: "wss://raboczi.id.au/example-websocket")!
+    let serverWebSocketURL = URL(string: "ws://radiostar.local:8181/example-websocket")!
+
     private var webSocketTask: URLSessionWebSocketTask?
     
     func start() {
         let urlSession = URLSession(configuration: .default)
-        webSocketTask = urlSession.webSocketTask(with: ServerWebSocketURL)
+        webSocketTask = urlSession.webSocketTask(with: serverWebSocketURL)
         guard let webSocketTask = webSocketTask else { fatalError("Oops") }
         receiveMessage(webSocketTask: webSocketTask)
         webSocketTask.resume()
@@ -40,8 +46,10 @@ class Bridge {
                 switch message {
                 case .string(let text):
                     NotificationCenter.default.post(name: TestServiceNotificationName, object: text)
+                    
                 case .data(let data):
                     print("Received data: \(data)")
+                    
                 @unknown default:
                     fatalError("Unrecognized message \(message)")
                 }

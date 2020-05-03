@@ -8,11 +8,6 @@
 
 import SwiftUI
 
-let OSGiEventPublisher =
-    NotificationCenter.default.publisher(for: TestServiceNotificationName)
-        .map { $0.object as? String ?? "Error" }
-        .receive(on: RunLoop.main)
-
 struct IndexView: View {
     
     @State private var testValue = "Gloop"
