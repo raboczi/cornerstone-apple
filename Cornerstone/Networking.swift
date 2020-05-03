@@ -66,10 +66,10 @@ func setTestValue(to newValue: String) {
                 let scheme = response.allHeaderFields["Www-Authenticate"] as? String
                 switch scheme {
                 case "Basic":
-                    print("Retry using Basic authentication")
+                    throw NSError(domain: "Application error domain", code: 5, userInfo: [NSLocalizedDescriptionKey: "Retry using Basic authentication"])
                     
                 default:
-                    print("Server at \(ServerURL) requires \(scheme ?? "unspecified") authentication method, which this app does not support")
+                    throw NSError(domain: "Application error domain", code: 5, userInfo: [NSLocalizedDescriptionKey: "Server at \(ServerURL) requires \(scheme ?? "unspecified") authentication method, which this app does not support"])
                 }
                 
             default:
