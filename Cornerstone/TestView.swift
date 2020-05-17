@@ -7,6 +7,7 @@
 //
 
 import Combine
+import CornerstoneClient
 import SwiftUI
 
 struct TestView: View {

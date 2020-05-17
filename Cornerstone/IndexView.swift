@@ -6,6 +6,7 @@
 //  Copyright © 2020 Simon Raboczi. All rights reserved.
 //
 
+import CornerstoneClient
 import SwiftUI
 
 struct IndexView: View {

@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90ED24276A5B00FB0AB1 /* TestView.swift */; };
 		020A90F024276AB900FB0AB1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90EF24276AB900FB0AB1 /* UserView.swift */; };
-		020A90F22427704E00FB0AB1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90F12427704E00FB0AB1 /* Networking.swift */; };
 		0239B1F2245D80D800977E8C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0239B1F1245D80D800977E8C /* README.md */; };
 		0256873D24223E210078AFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873C24223E210078AFDD /* AppDelegate.swift */; };
 		0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873E24223E210078AFDD /* SceneDelegate.swift */; };
@@ -18,7 +17,7 @@
 		0256874624223E230078AFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256874524223E230078AFDD /* Preview Assets.xcassets */; };
 		0256874924223E230078AFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256874724223E230078AFDD /* LaunchScreen.storyboard */; };
 		0256875424223E230078AFDD /* CornerstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256875324223E230078AFDD /* CornerstoneTests.swift */; };
-		02E6D9B1242DDACE005DDAD4 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6D9B0242DDACE005DDAD4 /* Bridge.swift */; };
+		025EEBC52471649600E11284 /* CornerstoneClient in Frameworks */ = {isa = PBXBuildFile; productRef = 025EEBC42471649600E11284 /* CornerstoneClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		020A90ED24276A5B00FB0AB1 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		020A90EF24276AB900FB0AB1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
-		020A90F12427704E00FB0AB1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0239B1F1245D80D800977E8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0256873924223E210078AFDD /* Cornerstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cornerstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256873C24223E210078AFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +46,7 @@
 		0256875324223E230078AFDD /* CornerstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerstoneTests.swift; sourceTree = "<group>"; };
 		0256875524223E230078AFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0256875E24223E700078AFDD /* Cornerstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cornerstone.entitlements; sourceTree = "<group>"; };
-		02E6D9B0242DDACE005DDAD4 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		025EEBC224715DC200E11284 /* CornerstoneClient */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CornerstoneClient; path = ../CornerstoneClient; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025EEBC52471649600E11284 /* CornerstoneClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +71,12 @@
 		0256873024223E210078AFDD = {
 			isa = PBXGroup;
 			children = (
+				025EEBC224715DC200E11284 /* CornerstoneClient */,
 				0239B1F1245D80D800977E8C /* README.md */,
 				0256873B24223E210078AFDD /* Cornerstone */,
 				0256875224223E230078AFDD /* CornerstoneTests */,
 				0256873A24223E210078AFDD /* Products */,
+				025EEBC32471649600E11284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +94,8 @@
 			children = (
 				0256875E24223E700078AFDD /* Cornerstone.entitlements */,
 				0256873C24223E210078AFDD /* AppDelegate.swift */,
-				02E6D9B0242DDACE005DDAD4 /* Bridge.swift */,
 				0256873E24223E210078AFDD /* SceneDelegate.swift */,
 				0256874024223E210078AFDD /* IndexView.swift */,
-				020A90F12427704E00FB0AB1 /* Networking.swift */,
 				020A90ED24276A5B00FB0AB1 /* TestView.swift */,
 				020A90EF24276AB900FB0AB1 /* UserView.swift */,
 				0256874224223E230078AFDD /* Assets.xcassets */,
@@ -124,6 +123,13 @@
 			path = CornerstoneTests;
 			sourceTree = "<group>";
 		};
+		025EEBC32471649600E11284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +146,9 @@
 			dependencies = (
 			);
 			name = Cornerstone;
+			packageProductDependencies = (
+				025EEBC42471649600E11284 /* CornerstoneClient */,
+			);
 			productName = Cornerstone;
 			productReference = 0256873924223E210078AFDD /* Cornerstone.app */;
 			productType = "com.apple.product-type.application";
@@ -228,9 +237,7 @@
 			files = (
 				020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */,
 				0256873D24223E210078AFDD /* AppDelegate.swift in Sources */,
-				02E6D9B1242DDACE005DDAD4 /* Bridge.swift in Sources */,
 				020A90F024276AB900FB0AB1 /* UserView.swift in Sources */,
-				020A90F22427704E00FB0AB1 /* Networking.swift in Sources */,
 				0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */,
 				0256874124223E210078AFDD /* IndexView.swift in Sources */,
 			);
@@ -501,6 +508,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		025EEBC42471649600E11284 /* CornerstoneClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CornerstoneClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0256873124223E210078AFDD /* Project object */;
 }
