@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90ED24276A5B00FB0AB1 /* TestView.swift */; };
-		020A90F024276AB900FB0AB1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A90EF24276AB900FB0AB1 /* UserView.swift */; };
 		0239B1F2245D80D800977E8C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0239B1F1245D80D800977E8C /* README.md */; };
 		0256873D24223E210078AFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873C24223E210078AFDD /* AppDelegate.swift */; };
 		0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256873E24223E210078AFDD /* SceneDelegate.swift */; };
-		0256874124223E210078AFDD /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256874024223E210078AFDD /* IndexView.swift */; };
 		0256874324223E230078AFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256874224223E230078AFDD /* Assets.xcassets */; };
 		0256874624223E230078AFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256874524223E230078AFDD /* Preview Assets.xcassets */; };
 		0256874924223E230078AFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256874724223E230078AFDD /* LaunchScreen.storyboard */; };
 		0256875424223E230078AFDD /* CornerstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256875324223E230078AFDD /* CornerstoneTests.swift */; };
 		025EEBC52471649600E11284 /* CornerstoneClient in Frameworks */ = {isa = PBXBuildFile; productRef = 025EEBC42471649600E11284 /* CornerstoneClient */; };
+		02C54BF424716FE500519981 /* Cornerstone for Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 02C54BF324716FE500519981 /* Cornerstone for Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02C54BFA24716FE500519981 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C54BF824716FE500519981 /* Interface.storyboard */; };
+		02C54BFC24716FE600519981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C54BFB24716FE600519981 /* Assets.xcassets */; };
+		02C54C0324716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02C54C0A24716FE700519981 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C54C0924716FE700519981 /* HostingController.swift */; };
+		02C54C0C24716FE700519981 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C54C0B24716FE700519981 /* ExtensionDelegate.swift */; };
+		02C54C0E24716FE700519981 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C54C0D24716FE700519981 /* NotificationController.swift */; };
+		02C54C1024716FE700519981 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C54C0F24716FE700519981 /* NotificationView.swift */; };
+		02C54C1224716FE700519981 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C54C1124716FE700519981 /* ComplicationController.swift */; };
+		02C54C1424716FE700519981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C54C1324716FE700519981 /* Assets.xcassets */; };
+		02C54C1724716FE700519981 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C54C1624716FE700519981 /* Preview Assets.xcassets */; };
+		02C54C262471722E00519981 /* CornerstoneClient in Frameworks */ = {isa = PBXBuildFile; productRef = 02C54C252471722E00519981 /* CornerstoneClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +37,52 @@
 			remoteGlobalIDString = 0256873824223E210078AFDD;
 			remoteInfo = Cornerstone;
 		};
+		02C54BF524716FE500519981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0256873124223E210078AFDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C54BF224716FE500519981;
+			remoteInfo = "Cornerstone for Watch WatchKit App";
+		};
+		02C54C0424716FE600519981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0256873124223E210078AFDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C54C0124716FE600519981;
+			remoteInfo = "Cornerstone for Watch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02C54C1C24716FE700519981 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				02C54BF424716FE500519981 /* Cornerstone for Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C54C1F24716FE700519981 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02C54C0324716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		020A90ED24276A5B00FB0AB1 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		020A90EF24276AB900FB0AB1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		0239B1F1245D80D800977E8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0256873924223E210078AFDD /* Cornerstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cornerstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256873C24223E210078AFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0256873E24223E210078AFDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0256874024223E210078AFDD /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		0256874224223E230078AFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0256874524223E230078AFDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0256874824223E230078AFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +92,21 @@
 		0256875524223E230078AFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0256875E24223E700078AFDD /* Cornerstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cornerstone.entitlements; sourceTree = "<group>"; };
 		025EEBC224715DC200E11284 /* CornerstoneClient */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CornerstoneClient; path = ../CornerstoneClient; sourceTree = "<group>"; };
+		02C54BF024716FE500519981 /* Cornerstone for Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cornerstone for Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C54BF324716FE500519981 /* Cornerstone for Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cornerstone for Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C54BF924716FE500519981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		02C54BFB24716FE600519981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02C54BFD24716FE600519981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cornerstone for Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C54C0924716FE700519981 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		02C54C0B24716FE700519981 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		02C54C0D24716FE700519981 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		02C54C0F24716FE700519981 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		02C54C1124716FE700519981 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		02C54C1324716FE700519981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02C54C1624716FE700519981 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02C54C1824716FE700519981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C54C1924716FE700519981 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +125,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02C54BFF24716FE600519981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C54C262471722E00519981 /* CornerstoneClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +143,8 @@
 				0239B1F1245D80D800977E8C /* README.md */,
 				0256873B24223E210078AFDD /* Cornerstone */,
 				0256875224223E230078AFDD /* CornerstoneTests */,
+				02C54BF724716FE500519981 /* Cornerstone for Watch WatchKit App */,
+				02C54C0624716FE600519981 /* Cornerstone for Watch WatchKit Extension */,
 				0256873A24223E210078AFDD /* Products */,
 				025EEBC32471649600E11284 /* Frameworks */,
 			);
@@ -85,6 +155,9 @@
 			children = (
 				0256873924223E210078AFDD /* Cornerstone.app */,
 				0256874F24223E230078AFDD /* CornerstoneTests.xctest */,
+				02C54BF024716FE500519981 /* Cornerstone for Watch.app */,
+				02C54BF324716FE500519981 /* Cornerstone for Watch WatchKit App.app */,
+				02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +168,6 @@
 				0256875E24223E700078AFDD /* Cornerstone.entitlements */,
 				0256873C24223E210078AFDD /* AppDelegate.swift */,
 				0256873E24223E210078AFDD /* SceneDelegate.swift */,
-				0256874024223E210078AFDD /* IndexView.swift */,
-				020A90ED24276A5B00FB0AB1 /* TestView.swift */,
-				020A90EF24276AB900FB0AB1 /* UserView.swift */,
 				0256874224223E230078AFDD /* Assets.xcassets */,
 				0256874724223E230078AFDD /* LaunchScreen.storyboard */,
 				0256874A24223E230078AFDD /* Info.plist */,
@@ -128,6 +198,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02C54BF724716FE500519981 /* Cornerstone for Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				02C54BF824716FE500519981 /* Interface.storyboard */,
+				02C54BFB24716FE600519981 /* Assets.xcassets */,
+				02C54BFD24716FE600519981 /* Info.plist */,
+			);
+			path = "Cornerstone for Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		02C54C0624716FE600519981 /* Cornerstone for Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				02C54C0924716FE700519981 /* HostingController.swift */,
+				02C54C0B24716FE700519981 /* ExtensionDelegate.swift */,
+				02C54C0D24716FE700519981 /* NotificationController.swift */,
+				02C54C0F24716FE700519981 /* NotificationView.swift */,
+				02C54C1124716FE700519981 /* ComplicationController.swift */,
+				02C54C1324716FE700519981 /* Assets.xcassets */,
+				02C54C1824716FE700519981 /* Info.plist */,
+				02C54C1924716FE700519981 /* PushNotificationPayload.apns */,
+				02C54C1524716FE700519981 /* Preview Content */,
+			);
+			path = "Cornerstone for Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		02C54C1524716FE700519981 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02C54C1624716FE700519981 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +275,60 @@
 			productReference = 0256874F24223E230078AFDD /* CornerstoneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		02C54BEF24716FE500519981 /* Cornerstone for Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C54C2424716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch" */;
+			buildPhases = (
+				02C54BEE24716FE500519981 /* Resources */,
+				02C54C1C24716FE700519981 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C54BF624716FE500519981 /* PBXTargetDependency */,
+			);
+			name = "Cornerstone for Watch";
+			productName = "Cornerstone for Watch";
+			productReference = 02C54BF024716FE500519981 /* Cornerstone for Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		02C54BF224716FE500519981 /* Cornerstone for Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C54C2324716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch WatchKit App" */;
+			buildPhases = (
+				02C54BF124716FE500519981 /* Resources */,
+				02C54C1F24716FE700519981 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C54C0524716FE600519981 /* PBXTargetDependency */,
+			);
+			name = "Cornerstone for Watch WatchKit App";
+			productName = "Cornerstone for Watch WatchKit App";
+			productReference = 02C54BF324716FE500519981 /* Cornerstone for Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		02C54C0124716FE600519981 /* Cornerstone for Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C54C2224716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch WatchKit Extension" */;
+			buildPhases = (
+				02C54BFE24716FE600519981 /* Sources */,
+				02C54BFF24716FE600519981 /* Frameworks */,
+				02C54C0024716FE600519981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cornerstone for Watch WatchKit Extension";
+			packageProductDependencies = (
+				02C54C252471722E00519981 /* CornerstoneClient */,
+			);
+			productName = "Cornerstone for Watch WatchKit Extension";
+			productReference = 02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +345,15 @@
 					0256874E24223E230078AFDD = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 0256873824223E210078AFDD;
+					};
+					02C54BEF24716FE500519981 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					02C54BF224716FE500519981 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					02C54C0124716FE600519981 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -205,6 +372,9 @@
 			targets = (
 				0256873824223E210078AFDD /* Cornerstone */,
 				0256874E24223E230078AFDD /* CornerstoneTests */,
+				02C54BEF24716FE500519981 /* Cornerstone for Watch */,
+				02C54BF224716FE500519981 /* Cornerstone for Watch WatchKit App */,
+				02C54C0124716FE600519981 /* Cornerstone for Watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +398,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02C54BEE24716FE500519981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C54BF124716FE500519981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C54BFC24716FE600519981 /* Assets.xcassets in Resources */,
+				02C54BFA24716FE500519981 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C54C0024716FE600519981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C54C1724716FE700519981 /* Preview Assets.xcassets in Resources */,
+				02C54C1424716FE700519981 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,11 +430,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020A90EE24276A5B00FB0AB1 /* TestView.swift in Sources */,
 				0256873D24223E210078AFDD /* AppDelegate.swift in Sources */,
-				020A90F024276AB900FB0AB1 /* UserView.swift in Sources */,
 				0256873F24223E210078AFDD /* SceneDelegate.swift in Sources */,
-				0256874124223E210078AFDD /* IndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +443,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02C54BFE24716FE600519981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C54C0A24716FE700519981 /* HostingController.swift in Sources */,
+				02C54C0E24716FE700519981 /* NotificationController.swift in Sources */,
+				02C54C0C24716FE700519981 /* ExtensionDelegate.swift in Sources */,
+				02C54C1024716FE700519981 /* NotificationView.swift in Sources */,
+				02C54C1224716FE700519981 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -258,6 +462,16 @@
 			isa = PBXTargetDependency;
 			target = 0256873824223E210078AFDD /* Cornerstone */;
 			targetProxy = 0256875024223E230078AFDD /* PBXContainerItemProxy */;
+		};
+		02C54BF624716FE500519981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C54BF224716FE500519981 /* Cornerstone for Watch WatchKit App */;
+			targetProxy = 02C54BF524716FE500519981 /* PBXContainerItemProxy */;
+		};
+		02C54C0524716FE600519981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C54C0124716FE600519981 /* Cornerstone for Watch WatchKit Extension */;
+			targetProxy = 02C54C0424716FE600519981 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -268,6 +482,14 @@
 				0256874824223E230078AFDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		02C54BF824716FE500519981 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C54BF924716FE500519981 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -477,6 +699,118 @@
 			};
 			name = Release;
 		};
+		02C54C1A24716FE700519981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		02C54C1B24716FE700519981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		02C54C1D24716FE700519981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				IBSC_MODULE = Cornerstone_for_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Cornerstone for Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		02C54C1E24716FE700519981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				IBSC_MODULE = Cornerstone_for_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Cornerstone for Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		02C54C2024716FE700519981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone for Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cornerstone for Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		02C54C2124716FE700519981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone for Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cornerstone for Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,10 +841,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		02C54C2224716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C54C2024716FE700519981 /* Debug */,
+				02C54C2124716FE700519981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C54C2324716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C54C1D24716FE700519981 /* Debug */,
+				02C54C1E24716FE700519981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C54C2424716FE700519981 /* Build configuration list for PBXNativeTarget "Cornerstone for Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C54C1A24716FE700519981 /* Debug */,
+				02C54C1B24716FE700519981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		025EEBC42471649600E11284 /* CornerstoneClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CornerstoneClient;
+		};
+		02C54C252471722E00519981 /* CornerstoneClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CornerstoneClient;
 		};
