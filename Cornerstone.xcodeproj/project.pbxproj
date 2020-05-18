@@ -27,6 +27,12 @@
 		02C54C1424716FE700519981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C54C1324716FE700519981 /* Assets.xcassets */; };
 		02C54C1724716FE700519981 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C54C1624716FE700519981 /* Preview Assets.xcassets */; };
 		02C54C262471722E00519981 /* CornerstoneClient in Frameworks */ = {isa = PBXBuildFile; productRef = 02C54C252471722E00519981 /* CornerstoneClient */; };
+		02DECD7724726C98003AD6F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DECD7624726C98003AD6F7 /* AppDelegate.swift */; };
+		02DECD7924726C98003AD6F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DECD7824726C98003AD6F7 /* ContentView.swift */; };
+		02DECD7B24726C9A003AD6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DECD7A24726C9A003AD6F7 /* Assets.xcassets */; };
+		02DECD7E24726C9A003AD6F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DECD7D24726C9A003AD6F7 /* Preview Assets.xcassets */; };
+		02DECD8124726C9A003AD6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DECD7F24726C9A003AD6F7 /* LaunchScreen.storyboard */; };
+		02DECD8724726CEE003AD6F7 /* CornerstoneClient in Frameworks */ = {isa = PBXBuildFile; productRef = 02DECD8624726CEE003AD6F7 /* CornerstoneClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,13 @@
 		02C54C1624716FE700519981 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02C54C1824716FE700519981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C54C1924716FE700519981 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		02DECD7424726C98003AD6F7 /* Cornerstone for TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cornerstone for TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DECD7624726C98003AD6F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02DECD7824726C98003AD6F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02DECD7A24726C9A003AD6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02DECD7D24726C9A003AD6F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02DECD8024726C9A003AD6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02DECD8224726C9A003AD6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +146,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02DECD7124726C98003AD6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DECD8724726CEE003AD6F7 /* CornerstoneClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,6 +166,7 @@
 				0256875224223E230078AFDD /* CornerstoneTests */,
 				02C54BF724716FE500519981 /* Cornerstone for Watch WatchKit App */,
 				02C54C0624716FE600519981 /* Cornerstone for Watch WatchKit Extension */,
+				02DECD7524726C98003AD6F7 /* Cornerstone for TV */,
 				0256873A24223E210078AFDD /* Products */,
 				025EEBC32471649600E11284 /* Frameworks */,
 			);
@@ -158,6 +180,7 @@
 				02C54BF024716FE500519981 /* Cornerstone for Watch.app */,
 				02C54BF324716FE500519981 /* Cornerstone for Watch WatchKit App.app */,
 				02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */,
+				02DECD7424726C98003AD6F7 /* Cornerstone for TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +253,27 @@
 			isa = PBXGroup;
 			children = (
 				02C54C1624716FE700519981 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02DECD7524726C98003AD6F7 /* Cornerstone for TV */ = {
+			isa = PBXGroup;
+			children = (
+				02DECD7624726C98003AD6F7 /* AppDelegate.swift */,
+				02DECD7824726C98003AD6F7 /* ContentView.swift */,
+				02DECD7A24726C9A003AD6F7 /* Assets.xcassets */,
+				02DECD7F24726C9A003AD6F7 /* LaunchScreen.storyboard */,
+				02DECD8224726C9A003AD6F7 /* Info.plist */,
+				02DECD7C24726C9A003AD6F7 /* Preview Content */,
+			);
+			path = "Cornerstone for TV";
+			sourceTree = "<group>";
+		};
+		02DECD7C24726C9A003AD6F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02DECD7D24726C9A003AD6F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -329,13 +373,33 @@
 			productReference = 02C54C0224716FE600519981 /* Cornerstone for Watch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		02DECD7324726C98003AD6F7 /* Cornerstone for TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DECD8524726C9A003AD6F7 /* Build configuration list for PBXNativeTarget "Cornerstone for TV" */;
+			buildPhases = (
+				02DECD7024726C98003AD6F7 /* Sources */,
+				02DECD7124726C98003AD6F7 /* Frameworks */,
+				02DECD7224726C98003AD6F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cornerstone for TV";
+			packageProductDependencies = (
+				02DECD8624726CEE003AD6F7 /* CornerstoneClient */,
+			);
+			productName = "Cornerstone for TV";
+			productReference = 02DECD7424726C98003AD6F7 /* Cornerstone for TV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0256873124223E210078AFDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Simon Raboczi";
 				TargetAttributes = {
@@ -354,6 +418,9 @@
 					};
 					02C54C0124716FE600519981 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					02DECD7324726C98003AD6F7 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -375,6 +442,7 @@
 				02C54BEF24716FE500519981 /* Cornerstone for Watch */,
 				02C54BF224716FE500519981 /* Cornerstone for Watch WatchKit App */,
 				02C54C0124716FE600519981 /* Cornerstone for Watch WatchKit Extension */,
+				02DECD7324726C98003AD6F7 /* Cornerstone for TV */,
 			);
 		};
 /* End PBXProject section */
@@ -423,6 +491,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02DECD7224726C98003AD6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DECD8124726C9A003AD6F7 /* LaunchScreen.storyboard in Resources */,
+				02DECD7E24726C9A003AD6F7 /* Preview Assets.xcassets in Resources */,
+				02DECD7B24726C9A003AD6F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -452,6 +530,15 @@
 				02C54C0C24716FE700519981 /* ExtensionDelegate.swift in Sources */,
 				02C54C1024716FE700519981 /* NotificationView.swift in Sources */,
 				02C54C1224716FE700519981 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DECD7024726C98003AD6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DECD7924726C98003AD6F7 /* ContentView.swift in Sources */,
+				02DECD7724726C98003AD6F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +577,14 @@
 				02C54BF924716FE500519981 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		02DECD7F24726C9A003AD6F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02DECD8024726C9A003AD6F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -811,6 +906,50 @@
 			};
 			name = Release;
 		};
+		02DECD8324726C9A003AD6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone for TV/Preview Content\"";
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cornerstone for TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		02DECD8424726C9A003AD6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cornerstone for TV/Preview Content\"";
+				DEVELOPMENT_TEAM = F5XA2GJLTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cornerstone for TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.id.raboczi.Cornerstone-for-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -868,6 +1007,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		02DECD8524726C9A003AD6F7 /* Build configuration list for PBXNativeTarget "Cornerstone for TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DECD8324726C9A003AD6F7 /* Debug */,
+				02DECD8424726C9A003AD6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -876,6 +1024,10 @@
 			productName = CornerstoneClient;
 		};
 		02C54C252471722E00519981 /* CornerstoneClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CornerstoneClient;
+		};
+		02DECD8624726CEE003AD6F7 /* CornerstoneClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CornerstoneClient;
 		};
